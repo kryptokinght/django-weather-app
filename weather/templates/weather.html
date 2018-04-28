@@ -1,4 +1,5 @@
 {% include 'partials/header.html' %}
+<!-- Section for unnecessary header -->
     <section class="hero is-primary">
         <div class="hero-body">
             <div class="container">
@@ -8,6 +9,7 @@
             </div>
         </div>
     </section>
+<!-- Section for city form -->
     <section class="section">
         <div class="container">
             <div class="columns">
@@ -29,6 +31,8 @@
             </div>
         </div>
     </section>
+<!-- Setion for weather cards -->
+{% for city_weather in cities_weather %}
     <section class="section">
         <div class="container">
             <div class="columns">
@@ -56,4 +60,5 @@
             </div>
         </div>
     </section>
+{% endfor %}
 {% include 'partials/footer.html' %}
